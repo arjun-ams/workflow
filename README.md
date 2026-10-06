@@ -6,6 +6,11 @@ This repository contains a simple GitHub Actions workflow that outputs test meta
 
 The workflow is defined in `.github/workflows/sample-workflow.yml`.
 
+It uploads two artifacts:
+
+1. `README.md` — the repository README file
+2. `sample-workflow.yml` — the workflow definition file
+
 ## Sample Output Values
 
 | Output Key             | Sample Value              | Description                          |
