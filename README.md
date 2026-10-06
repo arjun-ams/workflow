@@ -12,4 +12,4 @@ The workflow is defined in `.github/workflows/sample-workflow.yml`.
 |------------------------|---------------------------|--------------------------------------|
 | `test_case_id`         | `TC-001`                  | Unique identifier for the test case  |
 | `test_artifact_name`   | `Login Test Report`       | Human-readable name of the artifact  |
-| `test_artifact_filename` | `login-test-report.html` | File name of the generated artifact  |
+| `test_artifact_filename` | `README.md`               | File name of the generated artifact  |

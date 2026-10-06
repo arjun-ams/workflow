@@ -25,7 +25,13 @@ jobs:
         run: |
           echo "test_case_id=TC-001" >> $GITHUB_OUTPUT
           echo "test_artifact_name=Login Test Report" >> $GITHUB_OUTPUT
-          echo "test_artifact_filename=login-test-report.html" >> $GITHUB_OUTPUT
+          echo "test_artifact_filename=README.md" >> $GITHUB_OUTPUT
+
+      - name: Upload test artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: ${{ steps.test-step.outputs.test_artifact_filename }}
+          path: README.md
 
       - name: Print outputs
         run: |
