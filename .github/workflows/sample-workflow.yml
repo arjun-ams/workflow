@@ -32,6 +32,7 @@ jobs:
         with:
           name: ${{ steps.test-step.outputs.test_artifact_filename }}
           path: README.md
+          if-no-files-found: error
 
       - name: Print outputs
         run: |
